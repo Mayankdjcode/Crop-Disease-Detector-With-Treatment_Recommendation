@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <br>
+
+</head>
+<style>
+  body{
+    margin:0px;
+    padding: 0px;
+    align-items: center;
+    background-image: url('static/ind7.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .sec{
+    border:5 px solid rgb(13, 13, 13);
+    border-radius: 50px;
+
+    padding: 2px;
+    font-size: 20px;
+  }
+  .sec::-webkit-file-upload-button{
+    color: #fff;
+    background-image: linear-gradient(30deg,rgb(18, 161, 106),rgb(56, 126, 26));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+
+
+  .submit-button {
+    background-color: rgb(10, 155, 10);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+
+  .col
+{
+  font-family:Georgia, serif;
+
+  background-image: linear-gradient(
+    -225deg,
+    #078839f8 0%,
+    #087c04f2 29%,
+    #089f3b 67%,
+    #a3c20a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2.5s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+
+    sec{
+      border:5 px solid rgb(13, 13, 13);
+      border-radius: 20px;
+      padding: 2px;
+      font-size: 15px;
+    }
+  }
+</style>
+<body>
+
+  <div class="container">
+
+    <div class="col-lg-12">
+      <center><h1 class="col" style="padding:12px;font-weight: 600 !important;font-size: 3.0em">PLANT DISEASE DETECTION</h1></center>
+    </div>
+
+    <center><h2 class="col" style="font-size: 1.8em"><b>Click on 'Choose File' button to upload a clear image of the Plant Leaf you want to check and then click 'Detect' button</b></h2></center>
+    <br>
+    <div>
+    <div >
+      <center ><form  class="form-inline" action = "/detect" method = "post" enctype="multipart/form-data">
+          <input id="file" class="sec" type="file" name="file" onchange="return fileValidation()"/><br>
+          <input type = "submit"  class="submit-button" value="Detect">
+      </form></center>
+      <br>
+      <br>
+</div>
+    </div>
+    <div id="imagePreview"></div>
+    <script>
+        function fileValidation() {
+            var fileInput =
+                document.getElementById("file");
+
+            var filePath = fileInput.value;
+
+            // Allowing file type
+            var allowedExtensions =
+                    /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+            if (!allowedExtensions.exec(filePath)) {
+                alert('Invalid file type');
+                fileInput.value = '';
+                return false;
+            }
+
+        }
+    </script>
+
+  </div>
+</body>
+</html>
