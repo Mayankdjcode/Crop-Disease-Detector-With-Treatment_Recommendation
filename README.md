@@ -10,3 +10,7 @@ Aim:
 - Employing techniques such as image processing and machine learning, the system provides accurate and timely information to farmers, enabling them to take appropriate action to prevent crop losses.
 
 - The motivation for this project is to provide a solution to the problem of crop diseases that affect the livelihoods of many farmers worldwide
+
+- Dataset Used : DiseaseLeafNet
+  Kaggle link : https://www.kaggle.com/datasets/hemanth850/diseaseleafnet/
+
