@@ -1,9 +1,8 @@
 # Crop Disease Detector with Treatment Recommendation
 An ongoing project which uses a Hybrid based model to train and detect diseased plant leaf images and suggest a treatment for the same.
 
-Aim:
 
-- The crop disease detector with treatment recommendation system is designed to assist farmers in identifying and managing diseases affecting their crops. The system takes input images of diseased leaves and performs feature extraction using a hybrid architecture of Dense Net and Alex Net.
+- Aim: The crop disease detector with treatment recommendation system is designed to assist farmers in identifying and managing diseases affecting their crops. The system takes input images of diseased leaves and performs feature extraction using a hybrid architecture of Dense Net and Alex Net.
 
 - The system is designed to be a cost-effective and efficient tool for farmers to detect and treat diseases in their crops.
 
