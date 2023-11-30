@@ -11,6 +11,6 @@ Aim:
 
 - The motivation for this project is to provide a solution to the problem of crop diseases that affect the livelihoods of many farmers worldwide
 
-- Dataset Used : DiseaseLeafNet
+- Dataset Used : DiseaseLeafNet : 
   Kaggle link : https://www.kaggle.com/datasets/hemanth850/diseaseleafnet/
 
